@@ -11,15 +11,47 @@
     <table>
       <tr>
         <td>
-          <form>
+          <form autocomplete="off">
             <div>
               <label>Full Name</label>
-              <input type="text" name="fullname" />
+              <input type="text" name="fullname" id="fullname"/>
+            </div>
+
+            <div>
+              <label>EMP code</label>
+              <input type="text" name="empcode" id="empcode"/>
+            </div>
+
+            <div>
+              <label>Salary</label>
+              <input type="text" name="salary" id="salary"/>
+            </div>
+
+            <div>
+              <label>city</label>
+              <input type="text" name="city" id="city" />
+            </div>
+            <div>
+              <input type="submit" value="submit" />
             </div>
           </form>
         </td>
         <td>
           <!-- table list all records -->
+          <table class="list" id="employeelist">
+             <thead>
+                <tr>
+                    <th>full name</th>
+                    <th>emp code</th>
+                    <th>salary</th>
+                    <th>city</th>
+                    <th> </th>
+                </tr>
+                <tbody>
+
+                </tbody>
+             </thead>
+          </table>
         </td>
       </tr>
     </table>
