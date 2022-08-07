@@ -1,3 +1,14 @@
+
+.title{
+    font-size: 23px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: #0000ee;
+}
+
 body > table{
     width: 80%;
 }
@@ -11,7 +22,7 @@ table.list{
 
 td, th {
     border: 1px solid #dddddd;
-    text-align: left;
+    /* text-align: left; */
     padding: 8px;
 }
 tr:nth-child(even),table.list thead>tr {
@@ -30,13 +41,14 @@ input[type=text], input[type=number] {
 
 input[type=submit]{
     width: 30%;
-    background-color: #ddd;
-    color: #000;
+    background-color: #0000ee;
+    color: rgb(248, 234, 234);
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transform: translateX(233%);
 }
 
 form div .form-action-buttons{

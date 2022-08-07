@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="title">
+      CURD operation
+    </div>
     <table> 
       <tr>
         <td>
-          <form autocomplete="off">
+          <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
             <div>
-              <label>Full Name</label>
+              <label>full name *</label><label class="validation-error hide" id="fullnameValidationError">this field is required</label>
               <input type="text" name="fullname" id="fullname"/>
             </div>
 
@@ -46,7 +49,7 @@
                     <th>salary</th>
                     <th>city</th>
                     <th> </th>
-                </tr>
+                </tr> 
                 <tbody>
 
                 </tbody>
